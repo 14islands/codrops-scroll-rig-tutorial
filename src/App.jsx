@@ -1,6 +1,5 @@
 import React, { Suspense, useRef, useState } from "react";
 import { GlobalCanvas, SmoothScrollbar } from "@14islands/r3f-scroll-rig";
-
 import { Environment, Loader } from "@react-three/drei";
 
 import { BodyCopy, Headline, Subtitle } from "./Text";
@@ -39,9 +38,13 @@ export default function App() {
           <Lens>
             <WebGLBackground />
             <Suspense fallback="">
-              <Environment files="empty_warehouse_01_1k.hdr" />
+              {/* 
+                MeshWobbleMaterial and MeshDistortMaterial from Drei 
+                are MeshStandardMaterials and requires an environment
+              */}
+              <Environment files="env/empty_warehouse_01_1k.hdr" />
+              {globalChildren}
             </Suspense>
-            {globalChildren}
           </Lens>
         )}
       </GlobalCanvas>
@@ -66,7 +69,7 @@ export default function App() {
         </header>
         <section className="container">
           <Image
-            src="maxim-berg-1_U2RcHnSjc-unsplash.jpg"
+            src="images/maxim-berg-1_U2RcHnSjc-unsplash.jpg"
             className="ImageLandscape"
           />
         </section>
@@ -89,12 +92,12 @@ export default function App() {
         </section>
         <section className="ParallaxContainer">
           <Image
-            src="maxim-berg-qsDfqZyTCAE-unsplash-crop.jpg"
+            src="images/maxim-berg-qsDfqZyTCAE-unsplash-crop.jpg"
             className="aspect-9_13"
             parallaxSpeed={1.1}
           />
           <Image
-            src="maxim-berg-ANuuRuCRRAc-unsplash.jpg"
+            src="images/maxim-berg-ANuuRuCRRAc-unsplash.jpg"
             className="aspect-16_11"
             parallaxSpeed={0.9}
           />
@@ -110,7 +113,7 @@ export default function App() {
         </section>
         <section>
           <ImageCube
-            src="maxim-berg-TcE45yIzJA0-unsplash.jpg"
+            src="images/maxim-berg-TcE45yIzJA0-unsplash.jpg"
             className="JellyPlaceholder"
           />
         </section>
