@@ -10,7 +10,7 @@ export default function () {
       <a
         aria-label="Back to the article"
         className="frame__title-back"
-        href="https://tympanus.net/codrops/?p="
+        href="https://tympanus.net/codrops/?p=73607"
       >
         <span className="oh__inner">Back to the article</span>
         <svg width="18px" height="18px" viewBox="0 0 24 24">
@@ -20,7 +20,7 @@ export default function () {
           ></path>
         </svg>
       </a>
-      <a className="frame__prev" href="">
+      <a className="frame__prev" href="https://astro-shop-ten.vercel.app/">
         Previous demo
       </a>
     </div>
