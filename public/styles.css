@@ -1,0 +1,343 @@
+@import url("/fonts.css");
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-display: block;
+  overscroll-behavior: contain;
+  font-size: max(0.75rem, 0.8101851852vw);
+
+  color: #6e6bcd;
+  background: #ecedef;
+}
+
+::selection {
+  background: rgba(110, 107, 205, 0.5);
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  min-height: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  padding-left: max(1.2rem, 40/1440 * 100vw);
+  padding-right: max(1.2rem, 40/1440 * 100vw);
+}
+
+article {
+  padding-top: 15vh;
+}
+
+section {
+  margin: max(5px, 5vw) 0;
+}
+
+header {
+  height: 40vh;
+  max-height: 50vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: start;
+  margin-bottom: max(2.5rem, 5vw);
+}
+.headerLayout {
+  position: relative;
+}
+
+h2 {
+  font-size: max(3.75rem, 187/1440 * 100vw);
+  font-weight: 500;
+  line-height: 0.8;
+  letter-spacing: -0.03em;
+  margin: 0;
+  margin-left: -0.07em;
+}
+h2 span {
+  display: inline-block;
+  width: auto;
+}
+.subline {
+  font-weight: 400;
+  font-size: max(14px, calc(14 / 1440 * 100vw));
+  display: block;
+  line-height: 1.5;
+  letter-spacing: 0;
+  margin-top: 2.5rem;
+  width: 80%;
+}
+@media screen and (min-width: 64em) {
+  .subline {
+    position: absolute;
+    left: 50%;
+    bottom: 1.5%;
+    width: max(300px, 22vw);
+    height: auto;
+    top: auto;
+    display: block;
+  }
+}
+
+footer {
+  padding-top: max(2.5rem, 20vw);
+}
+
+.EffectsToggle {
+  position: sticky;
+  top: -1px; /* use to detect if pinned */
+  left: max(1.2rem, 40/1440 * 100vw);
+  z-index: 1000;
+  height: 20vh;
+  font-size: 1.5rem;
+  display: inline-block;
+  font-family: "Playfair Display";
+  font-style: italic;
+  letter-spacing: -0.03rem;
+}
+.EffectsToggle__Inner {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  padding: 0.5rem 1.2rem;
+  margin-left: -1.2rem;
+  margin-top: 1rem;
+  border-radius: 2.5rem;
+  transition: background 0.2s ease;
+}
+.EffectsToggle.is-pinned .EffectsToggle__Inner {
+  background: #dbe1f6;
+}
+
+.EffectsToggle__Text {
+  display: block;
+  width: 10em;
+}
+.EffectsToggle button {
+  appearance: none;
+  border: 1px solid #6e6bcd;
+  font-weight: 600;
+  font-family: "Poppins";
+  font-style: normal;
+  font-size: 1.25rem;
+
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: #6e6bcd;
+  border-radius: 100%;
+  background: transparent;
+  cursor: pointer;
+  width: 4.125rem;
+  height: 2.0625rem;
+  text-align: center;
+  vertical-align: center;
+  padding: 0;
+}
+
+h3 {
+  font-family: "Playfair Display", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  line-height: 1;
+  font-size: max(2rem, 64/1440 * 100vw);
+  margin: 10vw 0;
+}
+h3 span {
+  width: 80%;
+}
+h3 em {
+  text-align: right;
+  display: block;
+  margin-top: 2.5rem;
+}
+h3 em span {
+  margin-left: auto;
+}
+
+@media screen and (min-width: 35em) {
+  h3 em {
+    margin-top: 0;
+  }
+}
+
+h4 {
+  font-weight: 400;
+  font-size: max(1rem, 36/1440 * 100vw);
+  line-height: 1.36;
+  margin: max(5rem, 200/1440 * 100vw) 0;
+  width: 77%;
+}
+p {
+  margin-top: max(5rem, 5vw);
+}
+@media (min-width: 400px) {
+  p {
+    margin-left: 50%;
+    width: max(200px, 22vw);
+  }
+}
+
+.JellyPlaceholder {
+  aspect-ratio: 16/10;
+  width: 66%;
+  margin: auto;
+}
+
+.ImageLandscape {
+  aspect-ratio: 16/9;
+}
+.ImagePortrait {
+  aspect-ratio: 10/16;
+  width: 47.5%;
+}
+
+.ParallaxContainer {
+  display: flex;
+  margin: max(5rem, 300/1440 * 100vw) 0;
+}
+.aspect-16_11 {
+  aspect-ratio: 16/11;
+  width: 50%;
+}
+.aspect-9_13 {
+  aspect-ratio: 9/13;
+  width: 18%;
+  margin: auto;
+}
+
+img {
+  display: block;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+/* CODROPS TEMPLATE */
+
+a {
+  text-decoration: none;
+  color: var(--color-link);
+  outline: none;
+  cursor: pointer;
+}
+
+a:hover {
+  color: var(--color-link-hover);
+  outline: none;
+}
+
+/* Better focus styles from https://developer.mozilla.org/en-US/docs/Web/CSS/:focus-visible */
+a:focus {
+  /* Provide a fallback style for browsers
+	 that don't support :focus-visible */
+  outline: none;
+  background: lightgrey;
+}
+
+a:focus:not(:focus-visible) {
+  /* Remove the focus indicator on mouse-focus for browsers
+	 that do support :focus-visible */
+  background: transparent;
+}
+
+a:focus-visible {
+  /* Draw a very noticeable focus style for
+	 keyboard-focus on browsers that do support
+	 :focus-visible */
+  outline: 2px solid #6e6bcd;
+  background: transparent;
+}
+
+.frame {
+  width: 100%;
+  min-height: 5vh;
+  padding-bottom: 1.5rem;
+}
+.frame > * {
+  margin: 1rem 0;
+}
+@media screen and (min-width: 45em) {
+  .frame {
+    width: 100%;
+    height: 5vh;
+    display: grid;
+    padding-top: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.frame a,
+.frame button {
+  pointer-events: auto;
+}
+
+.frame a:not(.frame__title-back) {
+  white-space: nowrap;
+  overflow: hidden;
+  position: relative;
+  display: inline;
+}
+
+.frame a:not(.frame__title-back)::before {
+  content: "";
+  height: 1px;
+  width: 100%;
+  background: currentColor;
+  position: absolute;
+  top: 90%;
+  transition: transform 0.3s;
+  transform-origin: 0% 50%;
+}
+
+.frame a:not(.frame__title-back):hover::before {
+  transform: scaleX(0);
+  transform-origin: 100% 50%;
+}
+
+.frame__title {
+  grid-area: title;
+  display: flex;
+}
+
+.frame__title-main {
+  font-size: inherit;
+  margin: 0;
+  font-weight: inherit;
+}
+
+.frame__title-back {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+}
+
+/* .frame__title-back span {
+  display: none;
+} */
+
+.frame__title-back svg {
+  fill: currentColor;
+}
+
+.frame__prev {
+  grid-area: prev;
+}
