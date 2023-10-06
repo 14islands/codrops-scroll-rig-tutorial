@@ -1,12 +1,12 @@
-# Progressively enhanced WebGL & Lens Refraction
+# Progressively Enhanced WebGL Lens Refraction
 
 Learn how to create a responsive WebGL layout powered by CSS and React Three Fiber. By David Lindkvist.
 
-![Featured Image]()
+![Featured Image](https://tympanus.net/codrops/wp-content/uploads/2023/10/webglLens.gif)
 
-[Article on Codrops](https://tympanus.net/codrops/?p=)
+[Article on Codrops](https://tympanus.net/codrops/?p=73607)
 
-[Demo]()
+[Demo](https://tympanus.net/Tutorials/WebGLLensRefraction/)
 
 ## Installation
 
