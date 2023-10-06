@@ -93,12 +93,12 @@ export default function App() {
           <Image
             src="images/maxim-berg-qsDfqZyTCAE-unsplash-crop.jpg"
             className="aspect-9_13"
-            parallaxSpeed={1.1}
+            parallaxSpeed={1.08}
           />
           <Image
             src="images/maxim-berg-ANuuRuCRRAc-unsplash.jpg"
             className="aspect-16_11"
-            parallaxSpeed={0.9}
+            parallaxSpeed={0.92}
           />
         </section>
         <section className="container">
