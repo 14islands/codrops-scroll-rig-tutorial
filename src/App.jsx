@@ -39,8 +39,7 @@ export default function App() {
             <WebGLBackground />
             <Suspense fallback="">
               {/* 
-                MeshWobbleMaterial and MeshDistortMaterial from Drei 
-                are MeshStandardMaterials and requires an environment
+                Our materials use PBR ligting and requires an environment
               */}
               <Environment files="env/empty_warehouse_01_1k.hdr" />
               {globalChildren}
